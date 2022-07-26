@@ -1,0 +1,37 @@
+.todo-box {
+  border: 3px solid #008080;
+  border-radius: 8px;
+  padding: 1em;
+  width: 250px;
+  margin: 1em;
+}
+
+.todo-box h2 {
+  font-size: 1.5em;
+  padding: 0.8em 0;
+  font-weight: bold;
+}
+
+.todo-box p {
+  padding: 1em 0 2em 0;
+}
+
+.redBtn {
+  outline: none;
+  border: 2px solid red;
+  background: inherit;
+  padding: 0.5em 1.5em;
+  border-radius: 8px;
+  margin-right: 1em;
+  color: #000;
+}
+
+.greenBtn {
+  outline: none;
+  border: 2px solid green;
+  background: inherit;
+  padding: 0.5em 1.5em;
+  border-radius: 8px;
+  margin-right: 1em;
+  color: #000;
+}

@@ -1,0 +1,35 @@
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2em;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+label {
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+input {
+  padding: 1em;
+  border: none;
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 2em;
+}
+
+input:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 0.8em 3em;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #008080;
+  color: #fff;
+  cursor: pointer;
+}

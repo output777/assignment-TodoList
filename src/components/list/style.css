@@ -1,0 +1,10 @@
+.sectionTitle {
+  font-size: 2em;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.lists {
+  display: flex;
+}
+
