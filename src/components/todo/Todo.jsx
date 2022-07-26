@@ -5,6 +5,7 @@ const Todo = ({ todos, setTodos, id, title, desc, isDone}) => {
   const handleDelete = (id) => {
     let newTodos = todos.filter((data) => data.id !== id);
     setTodos(newTodos);
+    localStorage.setItem('todoData', JSON.stringify(newTodos))
   }
 
   const handleCompleted = (id) => {
@@ -15,6 +16,7 @@ const Todo = ({ todos, setTodos, id, title, desc, isDone}) => {
       return data;
     })
     setTodos(newTodos);
+    localStorage.setItem('todoData', JSON.stringify(newTodos))
   }
 
   return (

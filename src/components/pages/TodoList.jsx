@@ -4,8 +4,12 @@ import Header from '../header/Header'
 import Layout from '../layout/Layout'
 import List from '../list/List'
 
+const initialTodoData = localStorage.getItem('todoData')
+  ? JSON.parse(localStorage.getItem('todoData'))
+  : [];
+
 const TodoList = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(initialTodoData);
   const [title, setTitle] = useState('');
   const [desc, setDesc] = useState('');
 
@@ -20,6 +24,7 @@ const TodoList = () => {
     }
 
     setTodos((prev) => [...prev, newTodos]);
+    localStorage.setItem('todoData', JSON.stringify([...todos, newTodos]))
     setTitle('');
     setDesc('');
   }
