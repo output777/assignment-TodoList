@@ -16,11 +16,21 @@
   padding: 1em 0 2em 0;
 }
 
+.btn {
+  outline: none;
+  border: 2px solid blue;
+  background: inherit;
+  padding: 0.5em 0.8em;
+  border-radius: 8px;
+  margin-right: 1em;
+  color: #000;
+}
+
 .redBtn {
   outline: none;
   border: 2px solid red;
   background: inherit;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 0.8em;
   border-radius: 8px;
   margin-right: 1em;
   color: #000;
@@ -30,8 +40,13 @@
   outline: none;
   border: 2px solid green;
   background: inherit;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 0.8em;
   border-radius: 8px;
   margin-right: 1em;
   color: #000;
+}
+
+input {
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
 }
